@@ -32,3 +32,7 @@ python -m pytest -q
 ```
 
 Each experiment runs in under 15 seconds on CPU.
+
+The rank ratio is the kept rank as a fraction of the largest possible rank,
+`min(in_features, out_features)`, for each factorized layer. It is not the
+fraction of weights kept.

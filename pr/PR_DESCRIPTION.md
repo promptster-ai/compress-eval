@@ -5,8 +5,9 @@
 ## What
 
 Adds `src/compress.py`, which factorizes `c_fc` and `c_proj` in every
-transformer block with a truncated SVD at a configurable rank ratio, and a
-`--rank-ratio` sweep to `src/run_experiment.py`.
+transformer block with a truncated SVD at a configurable rank ratio, the
+perplexity evaluation in `src/eval.py`, and a `--rank-ratio` sweep to
+`src/run_experiment.py`.
 
 ## Results
 
