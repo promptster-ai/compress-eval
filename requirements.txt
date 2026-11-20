@@ -1,0 +1,7 @@
+# CPU-only torch keeps the install small; see setup in the README.
+torch>=2.2
+transformers>=4.40,<6
+safetensors>=0.4
+numpy>=1.26
+pandas>=2.0
+pytest>=8.0
