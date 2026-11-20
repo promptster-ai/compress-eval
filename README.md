@@ -10,13 +10,20 @@ transformer block with a truncated-SVD low-rank factorization.
 
 ```
 data/eval_texts.jsonl   50 evaluation samples, exactly 128 tokens each (no padding)
-models/distilgpt2/      bundled weights (no internet needed)
+models/distilgpt2/      config + tokenizer; scripts/setup.sh adds the weights
 src/eval.py             model + data loading, perplexity
 src/compress.py         SVD factorization of the MLP layers, parameter counting
 src/latency.py          CPU latency helper (pre-validated, do not modify)
 src/run_experiment.py   sweep CLI
 tests/                  pytest
 pr/PR_DESCRIPTION.md    Dev's PR
+```
+
+## Setup
+
+```bash
+bash scripts/setup.sh        # venv, CPU torch, deps, model weights
+source .venv/bin/activate
 ```
 
 ## Run
